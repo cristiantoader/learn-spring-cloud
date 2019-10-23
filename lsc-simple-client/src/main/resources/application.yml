@@ -1,0 +1,6 @@
+spring.application.name: simple-client
+
+eureka.client.service-url.defaultZone: http://localhost:8761/eureka
+
+server.port: 8081
+instance.name: instance 1
