@@ -1,0 +1,14 @@
+spring.application.name: api-gateway
+
+eureka.client.service-url.defaultZone: http://localhost:8761/eureka
+
+server.port: 8070
+
+# routing all example services to simple-service
+zool:
+  ignored-services: '*'
+  routes:
+    example-route:
+      path: /example/**
+      serviceId: simple-client
+
